@@ -468,18 +468,4 @@ For licensing inquiries, please contact the authors directly.
 
 ---
 
-# 📬 Contact
-
-### Himalaya Trekking Dreams
-
-Website: https://nepaltrekkingplanner.com
-
-Email: [info@nepaltrekkingplanner.com](mailto:info@nepaltrekkingplanner.com)
-
-Phone: +977-1-4701234
-
-📍 Kathmandu, Nepal
-
----
-
 ### Made with ❤️ in the Himalayas of Nepal
