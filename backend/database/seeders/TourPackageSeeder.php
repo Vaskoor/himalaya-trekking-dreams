@@ -1,0 +1,210 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\TourPackage;
+
+class TourPackageSeeder extends Seeder
+{
+    public function run()
+    {
+        $packages = [
+            // --- CULTURAL TOURS (tag = 'Cultural') ---
+            [
+                'slug' => 'kathmandu-valley-heritage',
+                'name' => 'Kathmandu Valley Heritage Tour',
+                'short_description' => 'Explore seven UNESCO World Heritage sites with expert guide.',
+                'description' => 'Full‑day tour covering Pashupatinath, Boudhanath, Swayambhunath, Patan and Bhaktapur Durbar Squares.',
+                'duration' => '4 Days',
+                'price' => 399,
+                'difficulty' => 'Easy',
+                'group_size' => '2–10',
+                'best_season' => 'All year',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800',
+                'highlights' => ['Pashupatinath Temple', 'Boudhanath Stupa', 'Swayambhunath', 'Patan Durbar Square', 'Bhaktapur Durbar Square'],
+                'included' => ['Hotel pickup/drop', 'Private vehicle', 'Guide', 'Entry fees', 'Bottled water'],
+                'excluded' => ['Lunch', 'Personal expenses', 'Gratuities'],
+                'icon' => '🏛️',
+                'tag' => 'Cultural',
+            ],
+            [
+                'slug' => 'pokhara-cultural',
+                'name' => 'Pokhara Valley & Cultural Tour',
+                'short_description' => 'Discover lakeside Pokhara, Bindabasini Temple, Devi’s Fall, and mountain views.',
+                'description' => 'Experience Phewa Lake, sacred temples, a unique waterfall, and the World Peace Pagoda.',
+                'duration' => '3 Days',
+                'price' => 349,
+                'difficulty' => 'Easy',
+                'group_size' => '2–10',
+                'best_season' => 'Sep–May',
+                'hero_image' => 'https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=800',
+                'highlights' => ['Phewa Lake', 'Bindabasini Temple', 'Devi\'s Fall', 'Gupteshwor Cave', 'World Peace Pagoda'],
+                'included' => ['Hotel pickup/drop', 'Private vehicle', 'Guide', 'Entry fees', 'Bottled water'],
+                'excluded' => ['Lunch', 'Personal expenses', 'Gratuities'],
+                'icon' => '🏞️',
+                'tag' => 'Cultural',
+            ],
+            [
+                'slug' => 'lumbini-pilgrimage',
+                'name' => 'Lumbini Pilgrimage Tour',
+                'short_description' => 'Visit the birthplace of Lord Buddha – Maya Devi Temple and international monasteries.',
+                'description' => 'Spiritual journey to Lumbini, the birthplace of Buddha. Explore the sacred garden, Ashokan pillar, and monasteries from around the world.',
+                'duration' => '3 Days',
+                'price' => 289,
+                'difficulty' => 'Easy',
+                'group_size' => '2–12',
+                'best_season' => 'Oct–Mar',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-1fcd0efc1cba?q=80&w=800',
+                'highlights' => ['Maya Devi Temple', 'Ashokan Pillar', 'Monastic Zone', 'World Peace Pagoda'],
+                'included' => ['Airport transfers', 'Private vehicle', 'Guide', 'Entry fees', 'Bottled water'],
+                'excluded' => ['Lunch', 'Personal expenses', 'Gratuities'],
+                'icon' => '🕉️',
+                'tag' => 'Cultural',
+            ],
+            [
+                'slug' => 'bandipur-village-tour',
+                'name' => 'Bandipur Village Cultural Tour',
+                'short_description' => 'Step back in time in a preserved Newari hill town with stunning mountain views.',
+                'description' => 'Explore Bandipur, a charming hilltop village with traditional architecture, ancient temples, and panoramic views of the Himalayas.',
+                'duration' => '2 Days',
+                'price' => 199,
+                'difficulty' => 'Easy',
+                'group_size' => '2–12',
+                'best_season' => 'All year',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800',
+                'highlights' => ['Traditional Newari houses', 'Khasi Mahal', 'Thani Mai Temple', 'Himalayan views'],
+                'included' => ['Private vehicle', 'Guide', 'Accommodation', 'Breakfast'],
+                'excluded' => ['Lunch & dinner', 'Personal expenses'],
+                'icon' => '🏘️',
+                'tag' => 'Cultural',
+            ],
+            // --- WILDLIFE SAFARIS (tag = 'Wildlife') ---
+            [
+                'slug' => 'chitwan-national-park-safari',
+                'name' => 'Chitwan National Park Safari',
+                'short_description' => 'Jungle safari on elephant back or jeep, canoe ride, bird watching, and Tharu cultural show.',
+                'description' => 'Experience the wild side of Nepal in Chitwan – rhinos, elephants, crocodiles, and over 500 bird species.',
+                'duration' => '3 Days',
+                'price' => 429,
+                'difficulty' => 'Easy',
+                'group_size' => '2–15',
+                'best_season' => 'Oct–May',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-1fcd0efc1cba?q=80&w=800',
+                'highlights' => ['Elephant Safari', 'Jeep Safari', 'Canoe Ride', 'Bird Watching', 'Tharu Cultural Show'],
+                'included' => ['Park entry fees', 'Accommodation', 'All meals', 'Safari activities', 'Guide'],
+                'excluded' => ['Personal expenses', 'Alcohol', 'Tips'],
+                'icon' => '🐘',
+                'tag' => 'Wildlife',
+            ],
+            [
+                'slug' => 'bardia-national-park-expedition',
+                'name' => 'Bardia National Park Expedition',
+                'short_description' => 'Remote jungle experience with high chance of spotting Bengal tigers, rhinos, and Gangetic dolphins.',
+                'description' => 'Bardia is one of Nepal’s largest and most pristine national parks – perfect for serious wildlife enthusiasts.',
+                'duration' => '4 Days',
+                'price' => 549,
+                'difficulty' => 'Moderate',
+                'group_size' => '2–10',
+                'best_season' => 'Oct–Apr',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-1fcd0efc1cba?q=80&w=800',
+                'highlights' => ['Tiger Tracking', 'Jungle Walk', 'River Safari', 'Dolphin Spotting', 'Elephant Breeding Center'],
+                'included' => ['Park permits', 'Accommodation', 'All meals', 'Jungle activities', 'Naturalist guide'],
+                'excluded' => ['Personal gear', 'Tips', 'Travel insurance'],
+                'icon' => '🐅',
+                'tag' => 'Wildlife',
+            ],
+            [
+                'slug' => 'koshi-tappu-bird-watching',
+                'name' => 'Koshi Tappu Bird Watching Tour',
+                'short_description' => 'Asia’s premier bird sanctuary with over 500 species, including migratory birds from Siberia.',
+                'description' => 'Explore the wetland paradise of Koshi Tappu, home to endangered water birds, wild water buffalo, and marsh mugger crocodiles.',
+                'duration' => '3 Days',
+                'price' => 359,
+                'difficulty' => 'Easy',
+                'group_size' => '2–12',
+                'best_season' => 'Nov–Feb',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-1fcd0efc1cba?q=80&w=800',
+                'highlights' => ['Water Birds', 'Marsh Mugger Crocodile', 'Wild Water Buffalo', 'Sunrise Safari'],
+                'included' => ['Entry fees', 'Accommodation', 'Meals', 'Birding guide', 'Boat safari'],
+                'excluded' => ['Personal expenses', 'Tips'],
+                'icon' => '🦩',
+                'tag' => 'Wildlife',
+            ],
+            // --- HERITAGE & CITY TOURS (tag = 'Heritage' or 'Historical') ---
+            [
+                'slug' => 'patan-bhaktapur-day-tour',
+                'name' => 'Patan & Bhaktapur Day Tour',
+                'short_description' => 'Walk through medieval squares, golden gates, 55-window palaces, and exquisite wood and stone craftsmanship.',
+                'description' => 'A full‑day exploration of two of the most beautiful Durbar Squares in the Kathmandu Valley.',
+                'duration' => '1 Day',
+                'price' => 99,
+                'difficulty' => 'Easy',
+                'group_size' => '2–15',
+                'best_season' => 'All year',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800',
+                'highlights' => ['Patan Durbar Square', 'Golden Temple', 'Bhaktapur Durbar Square', 'Nyatapola Temple', 'Pottery Square'],
+                'included' => ['Private vehicle', 'Guide', 'Entry fees', 'Bottled water'],
+                'excluded' => ['Lunch', 'Personal expenses'],
+                'icon' => '🏯',
+                'tag' => 'Heritage',
+            ],
+            [
+                'slug' => 'gorkha-manakamana-tour',
+                'name' => 'Gorkha & Manakamana Tour',
+                'short_description' => 'Visit the ancestral home of the Shah kings and the famous cable car to Manakamana Temple.',
+                'description' => 'Combine history and spirituality: explore Gorkha Durbar, then take a scenic cable car ride to the wish‑fulfilling temple of Manakamana.',
+                'duration' => '2 Days',
+                'price' => 199,
+                'difficulty' => 'Easy',
+                'group_size' => '2–12',
+                'best_season' => 'All year',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-1fcd0efc1cba?q=80&w=800',
+                'highlights' => ['Gorkha Durbar', 'Manakamana Temple', 'Cable Car Ride', 'Mountain Views'],
+                'included' => ['Private vehicle', 'Cable car ticket', 'Guide', 'Entry fees'],
+                'excluded' => ['Meals', 'Personal expenses'],
+                'icon' => '🏰',
+                'tag' => 'Heritage',
+            ],
+            [
+                'slug' => 'kirtipur-historic-walk',
+                'name' => 'Kirtipur Historic Walk',
+                'short_description' => 'Explore an ancient Newari town with a rich history, temples, and stunning valley views.',
+                'description' => 'Kirtipur is a hidden gem just south of Kathmandu, known for its narrow alleys, traditional houses, and the Bagh Bhairab Temple.',
+                'duration' => 'Half Day',
+                'price' => 59,
+                'difficulty' => 'Easy',
+                'group_size' => '2–10',
+                'best_season' => 'All year',
+                'hero_image' => 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800',
+                'highlights' => ['Bagh Bhairab Temple', 'Uma Maheshwar Temple', 'Tribhuvan University Viewpoint', 'Newari architecture'],
+                'included' => ['Guide', 'Local transport', 'Entry fees'],
+                'excluded' => ['Lunch', 'Personal expenses'],
+                'icon' => '🚶',
+                'tag' => 'Heritage',
+            ],
+        ];
+
+        foreach ($packages as $data) {
+            $pkg = TourPackage::firstOrNew(['slug' => $data['slug']]);
+            $pkg->fill([
+                'duration' => $data['duration'],
+                'price' => $data['price'],
+                'difficulty' => $data['difficulty'],
+                'group_size' => $data['group_size'],
+                'best_season' => $data['best_season'],
+                'hero_image' => $data['hero_image'],
+                'is_active' => true,
+                'icon' => $data['icon'],
+                'tag' => $data['tag'],
+            ]);
+            $pkg->setTranslation('name', 'en', $data['name'])
+                ->setTranslation('short_description', 'en', $data['short_description'])
+                ->setTranslation('description', 'en', $data['description'])
+                ->setTranslation('highlights', 'en', $data['highlights'])
+                ->setTranslation('included', 'en', $data['included'])
+                ->setTranslation('excluded', 'en', $data['excluded']);
+            $pkg->save();
+        }
+    }
+}

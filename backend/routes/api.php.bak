@@ -1,0 +1,13 @@
+<?php
+
+use App\Http\Controllers\Api\TrekController;
+use App\Http\Controllers\Api\BookingController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('treks', [TrekController::class, 'index']);
+Route::get('treks/{slug}', [TrekController::class, 'show']);
+Route::post('bookings', [BookingController::class, 'store']);
+<?php
+use App\Http\Controllers\Api\TrekController;
+Route::get('treks', [TrekController::class, 'index']);
+
